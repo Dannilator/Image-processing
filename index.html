@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Обработка изображений</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+            <input type="file" name="file" id="file" required accept="image/*">
+            <br>
+
+            <div>
+                <button id="blackwhite">Черно-белый фильтр</button>
+            </div>
+
+            <div>
+                <button id="simplif">Пикселизация (есть баги)</button>
+                <input type="range" id="simplrange" min="1" max="32" value="5">
+            </div>
+
+            <div>
+                <button id="toblack">Негатив</button>
+            </div>
+
+
+        <canvas id="canvas"></canvas>
+        <canvas id="output"></canvas>
+
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
